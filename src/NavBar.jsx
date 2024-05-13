@@ -1,31 +1,29 @@
-export const NavBar = () =>{
+import { Link } from 'react-router-dom';
+
+export const NavBar = () => {
     return (
         <ul className="nav justify-content-end ">
-  
-  <li className="nav-item">
-    <a className="nav-link" href="/">Inicio</a>
-  </li>
-  <li className="nav-item">
-    <a className="nav-link" href="/integrantes">Integrantes</a>
-  </li>
-  <li className="nav-item">
-    <a className="nav-link" href="/introduccion">Introducción</a>
-  </li>
-  
-  <li className="nav-item">
-    <a className="nav-link" href="/etica">Ética</a>
-  </li>
-  <li className="nav-item">
-    <a className="nav-link" href="/violaciones">Violaciones Comunes</a>
-  </li>
-  <li className="nav-item">
-    <a className="nav-link" href="/ciberespacio">Ciberética en el siglo XXI</a>
-  </li>
-  <li className="nav-item">
-    <a className="nav-link" href="/conclusiones">Conclusiones</a>
-  </li>
-  
-  
-</ul>
+            <li className="nav-item">
+                <Link className="nav-link" to="/">Inicio</Link>
+            </li>
+            <li className="nav-item">
+                <Link className="nav-link" to="/integrantes">Integrantes</Link>
+            </li>
+            <li className="nav-item">
+                <Link className="nav-link" to="/introduccion">Introducción</Link>
+            </li>
+            <li className="nav-item">
+                <Link className="nav-link" to="/etica">Ética</Link>
+            </li>
+            <li className="nav-item">
+                <Link className="nav-link" to="/violaciones">Violaciones Comunes</Link>
+            </li>
+            <li className="nav-item">
+                <Link className="nav-link" to="/ciberespacio">Ciberética en el siglo XXI</Link>
+            </li>
+            <li className="nav-item">
+                <Link className="nav-link" to="/conclusiones">Conclusiones</Link>
+            </li>
+        </ul>
     )
 }
